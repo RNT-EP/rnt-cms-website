@@ -24,3 +24,19 @@ jobs:
 
       - name: Run test
         run: dotnet test RNTWebsite/RNTWebsite.csproj
+
+      - name: Publish project
+        run: dotnet publish RNTWebsite/RNTWebsite.csproj --configuration Release --output ./publish
+
+      - name: List files in publish directory
+        run: ls -la ./publish  # Verifique os arquivos gerados para garantir que estão prontos para o deploy
+
+      - name: Deploy to Netlify
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}  # Token de autenticação do Netlify
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}  # ID do seu site no Netlify
+        run: |
+          curl -X POST -F "file=@./publish" \
+          -F "site_id=${{ secrets.NETLIFY_SITE_ID }}" \
+          -F "auth_token=${{ secrets.NETLIFY_AUTH_TOKEN }}" \
+          https://api.netlify.com/api/v1/sites/${{ secrets.NETLIFY_SITE_ID }}/deploys
