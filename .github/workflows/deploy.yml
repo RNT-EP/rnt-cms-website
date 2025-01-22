@@ -15,8 +15,6 @@ jobs:
 
       - name: Install .NET
         uses: actions/setup-dotnet@v4
-        with:
-          dotnet-version: 8.0
 
       - name: Restore dependencies
         run: dotnet restore RNTWebsite/RNTWebsite.csproj
@@ -25,8 +23,4 @@ jobs:
         run: dotnet build --configuration Release RNTWebsite/RNTWebsite.csproj
 
       - name: Run Umbraco locally
-        run: |
-          dotnet run --project "RNTWebsite" &  # Executa o dotnet run em segundo plano
-          PID=$!  # Pega o PID do processo em segundo plano
-          sleep 10  # Aguarda 10 segundos
-          kill $PID  # Interrompe o processo após 10 segundos
+        run: dotnet test RNTWebsite/RNTWebsite.csproj
