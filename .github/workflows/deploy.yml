@@ -29,7 +29,7 @@ jobs:
         run: |
           dotnet run --project "RNTWebsite" &  # Executa o dotnet run em segundo plano
           PID=$!  # Pega o PID do processo em segundo plano
-          sleep 10  # Aguarda 10 segundos para garantir que o servidor subiu
+          sleep 60  # Aguarda 10 segundos para garantir que o servidor subiu
 
           # Verifica se o servidor está ouvindo nas portas corretas
           if ! ps aux | grep "dotnet" | grep -q "Now listening on"; then
