@@ -32,7 +32,7 @@ jobs:
           sleep 30  # Aguarda 10 segundos para garantir que o servidor subiu
 
           # Verifica se o servidor está ouvindo nas portas corretas
-          if ! tail -n 50 /tmp/dotnet.log | grep -q "Now listening on:"; then
+          if [[ "$output" != *"Now listening on:"* ]]; then
             echo "Erro: O servidor não está ouvindo nas portas esperadas."
             exit 1
           fi
