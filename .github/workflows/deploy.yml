@@ -25,4 +25,8 @@ jobs:
         run: dotnet build --configuration Release RNTWebsite/RNTWebsite.csproj
 
       - name: Run Umbraco locally
-        run: timeout 10s dotnet run --project "RNTWebsite"
+        run: |
+          dotnet run --project "RNTWebsite" &  # Executa o dotnet run em segundo plano
+          PID=$!  # Pega o PID do processo em segundo plano
+          sleep 10  # Aguarda 10 segundos
+          kill $PID  # Interrompe o processo após 10 segundos
