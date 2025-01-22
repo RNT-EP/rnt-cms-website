@@ -1,0 +1,25 @@
+name: Deploy RNT Website
+on:
+  push:
+    branches:
+      - dev
+jobs:
+  deploy:
+    runs-on: macos-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0
+
+      - name: Restore dependencies
+        run: dotnet restore RNTWebsite/RNTWebsite.csproj
+
+      - name: Build project
+        run: dotnet build --configuration Release RNTWebsite/RNTWebsite.csproj
+
+      - name: Run Umbraco locally
+        run: dotnet run --project "RNTWebsite"
