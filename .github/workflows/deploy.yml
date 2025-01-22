@@ -5,7 +5,7 @@ on:
       - dev
 jobs:
   deploy:
-    runs-on: macos-latest
+    runs-on: [macos-latest, windows-latest, ubuntu-latest]
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -22,4 +22,5 @@ jobs:
         run: dotnet build --configuration Release RNTWebsite/RNTWebsite.csproj
 
       - name: Run Umbraco locally
-        run: dotnet run --project "RNTWebsite" --urls "http://0.0.0.0:5000"
+        run: dotnet run --project "RNTWebsite"
+        timeout-minutes: 0.17
