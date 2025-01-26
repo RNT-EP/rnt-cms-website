@@ -23,6 +23,7 @@ jobs:
 
   test:
     name: Test RNT Website
+    needs: build
     runs-on: [macos-latest, ubuntu-latest, windows-latest]
     steps:
         - name: Checkout code
