@@ -19,6 +19,10 @@ App_Data/Models/
 node_modules/
 bower_components/
 
+# Ignore published site files
+wwwroot/
+.publish/
+
 # Ignore IDE-specific files
 .vscode/
 .idea/
