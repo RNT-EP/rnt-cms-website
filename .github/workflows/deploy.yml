@@ -23,14 +23,21 @@ jobs:
       - name: Build project
         run: dotnet build --configuration Release RNTWebsite/RNTWebsite.csproj
 
-      - name: Publish project
-        run: dotnet publish --configuration Release --output ./publish --self-contained true -r ${{ matrix.runtime }} RNTWebsite/RNTWebsite.csproj
+      - name: Run the project in background
+        run: dotnet run --project "RNTWebsite" &
+        
+      - name: Start ngrok tunnel
+        run: ngrok http 5000 &
 
-      - name: Upload build artifacts
-        uses: actions/upload-artifact@v4
-        with:
-          name: RNTWebsite-${{ matrix.runtime }}
-          path: ./publish
+      - name: Wait for ngrok to start
+        run: sleep 10  # Espera um pouco para o ngrok iniciar
+
+      - name: Get ngrok URL
+        run: |
+          curl --silent --max-time 10 http://localhost:4040/api/tunnels | jq -r .tunnels[0].public_url
+
+      - name: Finish deployment
+        run: echo "Ngrok tunnel is active!"
      
       - name: Run test
         run: dotnet test RNTWebsite/RNTWebsite.csproj
