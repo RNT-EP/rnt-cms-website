@@ -4,18 +4,16 @@ on:
     branches:
       - dev
 jobs:
-  deploy:
-    strategy:
-      matrix:
-        os: [macos-latest]
-        runtime: [osx-arm64]
-    runs-on: ${{ matrix.os }}
+  build:
+    runs-on: [macos-latest, ubuntu-latest, windows-latest]
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
       - name: Install .NET
         uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.112
 
       - name: Restore dependencies
         run: dotnet restore RNTWebsite/RNTWebsite.csproj
@@ -23,21 +21,18 @@ jobs:
       - name: Build project
         run: dotnet build --configuration Release RNTWebsite/RNTWebsite.csproj
 
-      - name: Run the project in background
-        run: dotnet run --project "RNTWebsite" &
-        
-      - name: Start ngrok tunnel
-        run: ngrok http 5000 &
+  test:
+    name: Test RNT Website
+    runs-on: [macos-latest, ubuntu-latest, windows-latest]
+    steps:
+        - name: Checkout code
+          uses: actions/checkout@v4
 
-      - name: Wait for ngrok to start
-        run: sleep 10  # Espera um pouco para o ngrok iniciar
-
-      - name: Get ngrok URL
-        run: |
-          curl --silent --max-time 10 http://localhost:4040/api/tunnels | jq -r .tunnels[0].public_url
-
-      - name: Finish deployment
-        run: echo "Ngrok tunnel is active!"
-     
-      - name: Run test
-        run: dotnet test RNTWebsite/RNTWebsite.csproj
+        - name: Install .NET
+          uses: actions/setup-dotnet@v4
+          with:
+            dotnet-version: 8.0.112
+       
+        - name: Run test
+          run: dotnet test RNTWebsite/RNTWebsite.csproj
+    
