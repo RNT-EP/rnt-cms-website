@@ -5,7 +5,10 @@ on:
       - dev
 jobs:
   build:
-    runs-on: [macos-latest, ubuntu-latest, windows-latest]
+    strategy:
+        matrix:
+          os: [macos-latest, ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -24,7 +27,10 @@ jobs:
   test:
     name: Test RNT Website
     needs: build
-    runs-on: [macos-latest, ubuntu-latest, windows-latest]
+    strategy:
+        matrix:
+          os: [macos-latest, ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
     steps:
         - name: Checkout code
           uses: actions/checkout@v4
