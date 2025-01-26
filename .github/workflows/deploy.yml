@@ -8,7 +8,7 @@ jobs:
     strategy:
       matrix:
         os: [macos-latest]
-        runtime: [osx-x64]
+        runtime: [osx-arm64]
     runs-on: ${{ matrix.os }}
     steps:
       - name: Checkout code
