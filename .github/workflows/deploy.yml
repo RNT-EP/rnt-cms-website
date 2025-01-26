@@ -8,6 +8,7 @@ jobs:
     strategy:
       matrix:
         os: [macos-latest]
+        runtime: [osx-x64]
     runs-on: ${{ matrix.os }}
     steps:
       - name: Checkout code
@@ -23,12 +24,12 @@ jobs:
         run: dotnet build --configuration Release RNTWebsite/RNTWebsite.csproj
 
       - name: Publish project
-        run: dotnet publish --configuration Release --output ./publish RNTWebsite/RNTWebsite.csproj
+        run: dotnet publish --configuration Release --output ./publish --self-contained true -r ${{ matrix.runtime }} RNTWebsite/RNTWebsite.csproj
 
       - name: Upload build artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: Website
+          name: RNTWebsite-${{ matrix.runtime }}
           path: ./publish
      
       - name: Run test
