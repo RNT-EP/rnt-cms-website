@@ -62,3 +62,50 @@
     --color-primitives-white-1000: rgba(255, 255, 255, 1);
   }
   
+  /* mini header style*/
+  .socials-holder {
+    text-align: center; /* Centraliza o menu */
+  }
+  
+  .socials-primary {
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px; /* Espaçamento entre os itens */
+  }
+  
+  .socials-primary li a {
+    text-decoration: none; /* Remove o sublinhado */
+    font-size: 12px; /* Tamanho da fonte */
+    color: #fff; /* Cor do texto */
+    transition: color 0.3s ease; /* Efeito de transição ao passar o mouse */
+    font-family: "Montserrat-Regular", Helvetica;
+    font-weight: 400;
+  }
+  
+  .socials-primary li a:hover {
+    color: lightgray; /* Cor ao passar o mouse */
+  }
+
+
+  .icon {
+    display: inline-block;
+    width: 4em;
+    height: 1em;
+    fill: currentColor;
+  }
+
+  .flag-icon {
+    width: 20px; /* Tamanho da bandeira */
+    height: auto;
+    margin-right: 6px; /* Espaçamento entre a bandeira e a seta */
+  } 
+
+  .arrow-icon {
+    font-size: 16px; /* Tamanho da setinha */
+    margin-left: 10px; /* Espaço entre o texto e a setinha */
+    color: #000; /* Cor da setinha */
+    cursor: pointer;
+  }

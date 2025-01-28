@@ -7,50 +7,36 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="cabealho">
-      <div class="anexo-cabealho">
-        <div class="area-reservada">
-          <div class="text-wrapper">Área Reservada</div>
-          <div class="div">Carreiras</div>
-          <div class="text-wrapper-2">Contactos</div>
+    <!-- header-style-3 start-->
+    <header class="header--style-3" id="header">
+        <div class="container-fluid">
+            <!-- Mostra os componentes -->
+            <div id="mini-header-container"></div>
+			<div id="header-menu"></div>
         </div>
-      </div>
-      <div class="conteudo-cabealho">
-        <div class="logotipo">
-          <div class="logo-horizontal-sem">
-            <img class="component" src="/media/component.svg" />
-          </div>
-        </div>
-        <div class="menu-lingua">
-          <div class="header-menu">
-            <div class="header-menu-link">
-              <div class="text-wrapper-3">Início</div>
-            </div>
-            <div class="in-cio-wrapper">
-              <div class="text-wrapper-3">A RNT-EP</div>
-            </div>
-            <div class="in-cio-wrapper">
-              <div class="text-wrapper-3">Área de Negócios</div>
-            </div>
-            <div class="in-cio-wrapper">
-              <p class="text-wrapper-3">Rede de Transporte de Eletrecidade</p>
-            </div>
-            <div class="in-cio-wrapper">
-              <div class="text-wrapper-3">Tecnologia e Inovação</div>
-            </div>
-            <div class="in-cio-wrapper">
-              <div class="text-wrapper-3">Imprensa</div>
-            </div>
-          </div>
-          <div class="lingua">
-            <img class="shutterstock" src="/media/aoa.png" />
-            <div class="language-selection">
-              <div class="text-wrapper-4">AO</div>
-              <img class="chevron-down" src="/media/chevron-down.svg" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    </header>
+    <!-- header-style-3 end-->
+
+    <script>
+        // Função para carregar componentes
+        function loadComponent(id, filePath) {
+            fetch(filePath)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`Erro ao carregar o componente: ${filePath}`);
+                    }
+                    return response.text();
+                })
+                .then(html => {
+                    document.getElementById(id).innerHTML = html;
+                })
+                .catch(err => console.error(err));
+        }
+
+        // Carregando os componentes
+        loadComponent('mini-header-container', 'components/mini-header.html');
+		loadComponent('header-menu', 'components/header.html');
+    </script>
+
   </body>
 </html>
