@@ -15135,7 +15135,7 @@ blockquote::after {
   }
 }
 ul {
-  color: #82868a;
+  color: #000;
   list-style: none;
   padding: 0;
   line-height: 30px;
@@ -15602,7 +15602,8 @@ ul li::before {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding-right: 0px; /* selector idioma */
+  padding: 0; /* selector idioma */
+  margin: 0;
 }
 .lang-select {
   display: -webkit-inline-box;
@@ -15818,6 +15819,9 @@ ul li::before {
   list-style-type: none;
   line-height: initial;
 }
+.main-menu .menu-item {
+  padding: 0;
+}
 .main-menu > li {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -15890,7 +15894,7 @@ ul li::before {
 .main-menu > li.menu-item--has-child > a > span::after,
 .main-menu > li.menu-item--has-child > a > span::before {
   content: "";
-  display: block;
+  display: none;
   width: 6px;
   height: 2px;
   background-color: #0d73fc;

@@ -1,46 +1,12 @@
-﻿    <div class="cabealho">
-      <div class="anexo-cabealho">
-        <div class="area-reservada">
-          <div class="text-wrapper">Área Reservada</div>
-          <div class="div">Carreiras</div>
-          <div class="text-wrapper-2">Contactos</div>
-        </div>
-      </div>
-      <div class="conteudo-cabealho">
-        <div class="logotipo">
-          <div class="logo-horizontal-sem">
-            <img class="component" src="media/component.svg" />
-          </div>
-        </div>
-        <div class="menu-lingua">
-          <div class="header-menu">
-            <div class="header-menu-link">
-              <div class="text-wrapper-3">Início</div>
-            </div>
-            <div class="in-cio-wrapper">
-              <div class="text-wrapper-3">A RNT-EP</div>
-            </div>
-            <div class="in-cio-wrapper">
-              <div class="text-wrapper-3">Área de Negócios</div>
-            </div>
-            <div class="in-cio-wrapper">
-              <p class="text-wrapper-3">Rede de Transporte de Eletrecidade</p>
-            </div>
-            <div class="in-cio-wrapper">
-              <div class="text-wrapper-3">Tecnologia e Inovação</div>
-            </div>
-            <div class="in-cio-wrapper">
-              <div class="text-wrapper-3">Imprensa</div>
-            </div>
-          </div>
-          <div class="lingua">
-            <img class="shutterstock" src="media/aoa.png" />
-            <div class="language-selection">
-              <div class="text-wrapper-4">AO</div>
-              <img class="chevron-down" src="media/chevron-down.svg" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+﻿@inherits UmbracoViewPage
 
+@{
+    var siteSettings = Model.GetSiteSettings();
+    if (siteSettings is null) return;
+}
+
+  <section class="nav_header">
+    <div class="header-links">
+        @await Html.GetBlockGridHtmlAsync(siteSettings, "headerContent")
+    </div>
+  </section>
