@@ -22,10 +22,6 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 	/// <summary>Footer Properties</summary>
 	public partial interface IFooterProperties : IPublishedElement
 	{
-		/// <summary>Footer Content</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.5.3+2161edb")]
-		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		string FooterContent { get; }
 	}
 
 	/// <summary>Footer Properties</summary>
@@ -58,18 +54,5 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		}
 
 		// properties
-
-		///<summary>
-		/// Footer Content
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.5.3+2161edb")]
-		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		[ImplementPropertyType("footerContent")]
-		public virtual string FooterContent => GetFooterContent(this, _publishedValueFallback);
-
-		/// <summary>Static getter for Footer Content</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.5.3+2161edb")]
-		[return: global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		public static string GetFooterContent(IFooterProperties that, IPublishedValueFallback publishedValueFallback) => that.Value<string>(publishedValueFallback, "footerContent");
 	}
 }
