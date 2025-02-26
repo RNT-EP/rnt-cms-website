@@ -50,6 +50,30 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		// properties
 
 		///<summary>
+		/// DescricaoProjetos
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.5.3+2161edb")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("descricaoProjetos")]
+		public virtual global::Umbraco.Cms.Core.Strings.IHtmlEncodedString DescricaoProjetos => this.Value<global::Umbraco.Cms.Core.Strings.IHtmlEncodedString>(_publishedValueFallback, "descricaoProjetos");
+
+		///<summary>
+		/// ImageProjetos
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.5.3+2161edb")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("imageProjetos")]
+		public virtual global::Umbraco.Cms.Core.Models.MediaWithCrops ImageProjetos => this.Value<global::Umbraco.Cms.Core.Models.MediaWithCrops>(_publishedValueFallback, "imageProjetos");
+
+		///<summary>
+		/// ListaProjetos
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.5.3+2161edb")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("listaProjetos")]
+		public virtual global::Umbraco.Cms.Core.Models.Blocks.BlockListModel ListaProjetos => this.Value<global::Umbraco.Cms.Core.Models.Blocks.BlockListModel>(_publishedValueFallback, "listaProjetos");
+
+		///<summary>
 		/// Noticias
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.5.3+2161edb")]
@@ -96,5 +120,21 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("titulo")]
 		public virtual string Titulo => this.Value<string>(_publishedValueFallback, "titulo");
+
+		///<summary>
+		/// TituloPrincipal
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.5.3+2161edb")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("tituloPrincipal")]
+		public virtual string TituloPrincipal => this.Value<string>(_publishedValueFallback, "tituloPrincipal");
+
+		///<summary>
+		/// TituloProjetos
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.5.3+2161edb")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("tituloProjetos")]
+		public virtual string TituloProjetos => this.Value<string>(_publishedValueFallback, "tituloProjetos");
 	}
 }
