@@ -1,0 +1,10 @@
+@inherits UmbracoViewPage
+
+@{
+    var siteSettings = Model.GetHomePage();
+    if (siteSettings is null) return;
+}
+
+@await Html.GetBlockGridItemsHtmlAsync(siteSettings.About)
+
+
