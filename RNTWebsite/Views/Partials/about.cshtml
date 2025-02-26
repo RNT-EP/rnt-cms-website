@@ -1,10 +1,28 @@
-@inherits UmbracoViewPage
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.HomePage>
+  
+@if (Model.Sobre != null && Model.Sobre.Any())
+{
+    <section data-w-id="e2a2141a-0912-70f3-daf0-01c0007f7a05" style="opacity:0" class="section_message">
+        <div class="w-layout-blockcontainer container_message inicio w-container">
+            @foreach (var about in Model.Sobre)
+            {
+                var aboutContent = about.Content;
+                var image = aboutContent.Value<Umbraco.Cms.Core.Models.MediaWithCrops>("image");
+                var title = aboutContent.Value<string>("title");
+                var desc = aboutContent.Value<string>("description");
 
-@{
-    var siteSettings = Model.GetHomePage();
-    if (siteSettings is null) return;
+                <div class="div-block-15 inicio">
+                    <img src="@image?.Url()" loading="eager" alt="@title" class="image-4">
+                    <div class="div-block-22">
+                        <div class="div_title">
+                            <div class="line_separator"></div>
+                            <h4 class="heading-6">@title</h4>
+                        </div>
+                        <p class="sobre_paragraph">@Html.Raw(desc)</p>
+                    </div>
+                </div>
+            }
+        </div>
+    </section>
 }
-
-@await Html.GetBlockGridItemsHtmlAsync(siteSettings.About)
-
-

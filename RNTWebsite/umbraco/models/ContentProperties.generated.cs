@@ -22,10 +22,6 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 	/// <summary>Content Properties</summary>
 	public partial interface IContentProperties : IPublishedElement
 	{
-		/// <summary>Main Content</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.5.3+2161edb")]
-		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		string MainContent { get; }
 	}
 
 	/// <summary>Content Properties</summary>
@@ -58,18 +54,5 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		}
 
 		// properties
-
-		///<summary>
-		/// Main Content
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.5.3+2161edb")]
-		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		[ImplementPropertyType("mainContent")]
-		public virtual string MainContent => GetMainContent(this, _publishedValueFallback);
-
-		/// <summary>Static getter for Main Content</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.5.3+2161edb")]
-		[return: global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		public static string GetMainContent(IContentProperties that, IPublishedValueFallback publishedValueFallback) => that.Value<string>(publishedValueFallback, "mainContent");
 	}
 }
