@@ -58,6 +58,22 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		public virtual global::Umbraco.Cms.Core.Models.Blocks.BlockGridModel Noticias => this.Value<global::Umbraco.Cms.Core.Models.Blocks.BlockGridModel>(_publishedValueFallback, "noticias");
 
 		///<summary>
+		/// Parceiros
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.5.3+2161edb")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("parceiros")]
+		public virtual global::Umbraco.Cms.Core.Models.Blocks.BlockGridModel Parceiros => this.Value<global::Umbraco.Cms.Core.Models.Blocks.BlockGridModel>(_publishedValueFallback, "parceiros");
+
+		///<summary>
+		/// ParceirosTitulo
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.5.3+2161edb")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("parceirosTitulo")]
+		public virtual string ParceirosTitulo => this.Value<string>(_publishedValueFallback, "parceirosTitulo");
+
+		///<summary>
 		/// Slider
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.5.3+2161edb")]
@@ -72,5 +88,13 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("sobre")]
 		public virtual global::Umbraco.Cms.Core.Models.Blocks.BlockListModel Sobre => this.Value<global::Umbraco.Cms.Core.Models.Blocks.BlockListModel>(_publishedValueFallback, "sobre");
+
+		///<summary>
+		/// Titulo
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.5.3+2161edb")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("titulo")]
+		public virtual string Titulo => this.Value<string>(_publishedValueFallback, "titulo");
 	}
 }

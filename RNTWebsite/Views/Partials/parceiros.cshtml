@@ -1,0 +1,35 @@
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.HomePage>
+
+<section data-w-id="1f5ae62e-d349-2174-9050-9e28434d0d1f" style="opacity:0" class="section_parceiros">
+    <div class="w-layout-blockcontainer conatiner_parceiros w-container">
+        <div class="div-block-30">
+            <div class="div_title">
+                <div class="line_separator"></div>
+                <h4 class="heading-6">@Model.ParceirosTitulo</h4>
+            </div>
+        </div>
+        <div class="div-block-29">
+            @if (Model.Parceiros != null && Model.Parceiros.Any())
+            {
+                @foreach (var item in Model.Parceiros)
+                {
+                    var itemContent = item.Content;
+                    var images = itemContent.Value<IEnumerable<Umbraco.Cms.Core.Models.MediaWithCrops>>("image");
+
+                    @if (images != null && images.Any())
+                    {
+                        foreach (var image in images)
+                        {
+                            <img src="@image.Url()" loading="lazy" alt="Parceiro" class="parceiros_image">
+                        }
+                    }
+                }
+            }
+            else
+            {
+                <p>Não há parceiros disponíveis.</p>
+            }
+        </div>
+    </div>
+</section>
