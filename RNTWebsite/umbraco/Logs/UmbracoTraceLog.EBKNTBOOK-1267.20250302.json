@@ -1,0 +1,1 @@
+{"@t":"2025-03-02T10:44:55.6001980Z","@mt":"Deleted {count} ContentVersion(s)","count":32,"SourceContext":"Umbraco.Cms.Infrastructure.BackgroundJobs.Jobs.ContentVersionCleanupJob","ProcessId":27287,"ProcessName":"RNTWebsite","ThreadId":143,"ApplicationId":"d664350ff5b5db81dcb33bc6e628f07efc35cb27","MachineName":"EBKNTBOOK-1267","Log4NetLevel":"INFO "}
