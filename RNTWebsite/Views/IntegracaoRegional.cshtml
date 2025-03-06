@@ -1,0 +1,86 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.IntegracaoRegional>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+    Layout = "rntmain.cshtml";
+}
+
+<section data-w-id="46f645cb-07a8-490e-3dd8-3e3ad754d8b6" style="opacity:1" class="section_comerce">
+    <div class="w-layout-blockcontainer container_commerce legislacao w-container">
+        <div class="div-block-21 legislacao">
+            <div class="body_info">
+                @if (Model.Items != null && Model.Items.Any())
+                {
+                    @foreach (var item in Model.Items)
+                    { 
+                        var itemContent = item.Content;
+                        var title = itemContent.Value<string>("title");
+                        var subtitle = itemContent.Value<string>("subtitle");
+                        var desc = itemContent.Value<string>("description");
+                        var mainImage = itemContent.Value<Umbraco.Cms.Core.Models.MediaWithCrops>("image"); 
+                        var blockGrid = itemContent.Value<BlockGridModel>("images");
+
+                        @if (!string.IsNullOrEmpty(title))
+                        {
+                            <h1 class="heading-10">@Html.Raw(title)</h1>
+                        }
+
+                        @if (!string.IsNullOrEmpty(subtitle))
+                        {
+                            <div class="text-block-11">@Html.Raw(subtitle)</div>
+                        }
+
+                        @if (!string.IsNullOrEmpty(desc))
+                        {
+                            <div class="paragraph_divmargin">
+                                <p class="paragraph-4">@Html.Raw(desc)</p>
+                            </div>
+                        }
+
+                        @if (mainImage != null)
+                        {
+                            <div class="image_block">
+                                <img sizes="(max-width: 1103px) 100vw, 1103px" alt="" loading="lazy" src="@mainImage.Url()">
+                            </div>
+                        }
+
+                        <div class="div-block-42">
+                            @if (itemContent.HasValue("LINK"))
+                            {
+                                var links = itemContent.Value<IEnumerable<Umbraco.Cms.Core.Models.Link>>("LINK");
+
+                                if (links != null && links.Any())
+                                {
+                                    foreach (var link in links)
+                                    {
+                                        <a href="@link.Url" target="@link.Target" class="decret-link">@link.Name</a>
+                                    }
+                                }
+                            }
+                        </div>
+
+                        @if (blockGrid != null && blockGrid.Any())
+                        {
+                            <div class="galery">
+                                @foreach (var blockItem in blockGrid)
+                                {
+                                    var content = blockItem.Content;
+                                    var gridImages = content.Value<IEnumerable<Umbraco.Cms.Core.Models.MediaWithCrops>>("image");
+
+                                    @if (gridImages != null && gridImages.Any())
+                                    {
+                                        @foreach (var image in gridImages)
+                                        {
+											 <div><img src="@image.Url()" loading="lazy" alt=""></div>
+                                            
+                                        }
+                                    }
+                                }
+                            </div>
+                        }
+                    }
+                }
+            </div>
+        </div>
+    </div>
+</section>

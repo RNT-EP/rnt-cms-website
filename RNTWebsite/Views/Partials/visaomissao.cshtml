@@ -1,0 +1,35 @@
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.VisaoMissaoValores>
+
+<section class="section_cards">
+  <div data-w-id="517e7219-8994-2fd8-3efb-c6d88fa3e5ad" style="opacity:1" class="w-layout-blockcontainer container_cards w-container">
+    <div class="div-block-17">
+
+      @if (Model.Cultura != null && Model.Cultura.Any())
+      {
+
+        @foreach (var item in Model.Cultura)
+        { 
+          var itemContent = item.Content;
+          var image = itemContent.Value<Umbraco.Cms.Core.Models.MediaWithCrops>("image");
+          var title = itemContent.Value<string>("title");
+          var desc = itemContent.Value<string>("description");
+
+          <div class="div_card">
+            <div class="image_div">
+              <img src="@image.Url()" loading="lazy" width="385" height="Auto" alt="">
+            </div>
+            <div class="message_div">
+              <div class="div-block-19">
+                <div class="div-block-20"></div>
+                <h1 class="heading-3">@title</h1>
+              </div>
+              <p class="paragraph-3">@Html.Raw(desc)</p>
+            </div>
+          </div>
+        }
+      } 
+
+    </div>
+  </div>
+</section>

@@ -1,0 +1,47 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.PTse>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+	Layout = "rntmain.cshtml";
+}
+
+<section data-w-id="270d6e87-52f4-9038-460c-2cb6213c2659" style="opacity:1" class="section_comerce ptse">
+    <div class="w-layout-blockcontainer container_commerce w-container">
+        <div class="div-block-21">
+            @if (Model.Dados != null && Model.Dados.Any())
+            {
+                @foreach (var item in Model.Dados)
+                { 
+                    var itemContent = item.Content;
+                    var image = itemContent.Value<Umbraco.Cms.Core.Models.MediaWithCrops>("image");
+                    var title = itemContent.Value<string>("title");
+                    var desc = itemContent.Value<string>("description");
+
+                    <div class="body_info">
+                        @if (!string.IsNullOrEmpty(title))
+                        {
+                            <div class="div_title">
+                                <div class="line_separator"></div>
+                                <h4>@title</h4>
+                            </div>
+                        }
+
+                        <div class="paragraph_div">
+                            @if (!string.IsNullOrEmpty(desc))
+                            {
+                                @Html.Raw(desc)
+                            }
+                        </div>
+
+                        @if (image != null)
+                        {
+                            <div class="image_block">
+                                <img sizes="(max-width: 1103px) 100vw, 1103px" alt="" loading="lazy" src="@image.Url()">
+                            </div>
+                        }
+                    </div>
+                }
+            }
+        </div>
+    </div>
+</section>
