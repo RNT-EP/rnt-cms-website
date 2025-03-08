@@ -555,3 +555,4 @@
 /Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/bin/Debug/net8.0/appsettings-schema.Umbraco.Cms.json
 /Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/bin/Debug/net8.0/App_Plugins/BlockGridPreviews/package.manifest
 /Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/bin/Debug/net8.0/App_Plugins/BlockGridPreviews/navigationgroup.html
+/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/obj/Debug/net8.0/RNTWebsite.sourcelink.json

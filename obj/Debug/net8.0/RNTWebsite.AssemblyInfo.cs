@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RNTWebsite")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+221cde92dfb314be8204c0adfdfa5c553d11a1d6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a5eef5bd2882c9dd93038e776ff19b28b2487600")]
 [assembly: System.Reflection.AssemblyProductAttribute("RNTWebsite")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RNTWebsite")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
