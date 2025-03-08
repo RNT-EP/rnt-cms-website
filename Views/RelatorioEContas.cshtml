@@ -1,0 +1,51 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.RelatorioEcontas>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+	Layout = "rntmain.cshtml";
+}
+
+
+<section data-w-id="63d135bf-fd01-d1ed-7d2f-9fcdd5ae0b9d" class="section-decretos">
+    <div class="w-layout-blockcontainer container-decretos w-container">
+        <div class="div-llinks">
+            @if (Model.Items != null && Model.Items.Any())
+            {
+                @foreach (var item in Model.Items)
+                { 
+                    var itemContent = item.Content;
+                    var title = itemContent.Value<string>("title");
+                    var subtitle = itemContent.Value<string>("subtitle");
+
+                    <!-- Verifica se o título existe e, se sim, renderiza com Html.Raw -->
+                    @if (!string.IsNullOrEmpty(title))
+                    {
+                        <h1 class="heading-10">@Html.Raw(title)</h1> <!-- Codificação HTML no título -->
+                    }
+
+                    <!-- Verifica se o subtítulo existe e, se sim, renderiza com Html.Raw -->
+                    @if (!string.IsNullOrEmpty(subtitle))
+                    {
+                        <div class="text-block-11">@Html.Raw(subtitle)</div> <!-- Codificação HTML no subtítulo -->
+                    }
+
+                    <div class="div-block-42">
+                        @if (itemContent.HasValue("LINK")) // Verifique se o campo LINK tem valor
+                        {
+                            // Acesse os links do campo MultiUrlPicker
+                            var links = itemContent.Value<IEnumerable<Umbraco.Cms.Core.Models.Link>>("LINK");
+
+                            if (links != null && links.Any())
+                            {
+                                foreach (var link in links)
+                                {
+                                    <a href="@link.Url" target="@link.Target" class="decret-link">@link.Name</a>
+                                }
+                            }
+                        }
+                    </div>
+                }
+            }
+        </div>
+    </div>
+</section>

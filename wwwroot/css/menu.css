@@ -1,0 +1,180 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  /* Container principal */
+  .container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: #fff;
+    width: 100%;
+    padding: 10px 10px;
+    position: sticky;
+  }
+  
+  .navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0; /* Linha de limite */
+  }
+  
+  /* Logo */
+  .logo a {
+    color: #333;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: 700;
+  }
+  
+  /* Links do menu */
+  .nav-links {
+    display: flex;
+    list-style: none;
+  }
+  
+  .nav-links li {
+    position: relative;
+  }
+  
+  .nav-links li a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400; /* Peso da fonte */
+    font-size: 12px; /* Tamanho da fonte */
+    color: #333;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    position: relative;
+  }
+  
+  /* Efeito de sublinhado no hover (apenas para links principais) */
+  .nav-links > li > a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #333;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s;
+  }
+  
+  .nav-links > li > a:hover::after {
+    width: 100%; /* Ocupa 100% da largura do link */
+  }
+  
+  .nav-links > li > a:hover {
+    font-weight: bold; /* Altera a fonte para negrito no hover */
+  }
+  
+  /* Submenu */
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    list-style: none;
+    padding: 0;
+    min-width: 150px;
+    border-radius: 4px; /* Borda arredondada */
+    border: 1px solid #e0e0e0; /* Linha como limite */
+  }
+  
+  .dropdown-menu li a {
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+    display: block;
+    transition: background 0.3s;
+  }
+  
+  /* Efeito de hover nos submenus */
+  .dropdown-menu li a:hover {
+    background-color: #f0f0f0; /* Cor de fundo ao passar o mouse */
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  /* Menu responsivo */
+  .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px 0;
+    transition: transform 0.3s, opacity 0.3s;
+  }
+  
+  /* Transformação em "X" */
+  .menu-toggle.active .bar:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+  }
+  
+  .menu-toggle.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .menu-toggle.active .bar:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+  }
+  
+  /* Estilos para dispositivos móveis */
+  @media (max-width: 768px) {
+    .container {
+      padding: 0 0; /* Padding lateral menor para mobile */
+    }
+  
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background-color: #fff;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      border-top: 1px solid #e0e0e0; /* Linha como limite */
+      padding: 10px 0; /* Padding interno para o menu mobile */
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .menu-toggle {
+      display: flex;
+    }
+  
+    .dropdown-menu {
+      position: static;
+      background-color: #f9f9f9;
+      border: none;
+      border-radius: 0;
+      display: none; /* Oculta o dropdown por padrão */
+      padding-left: 20px; /* Padding para alinhar submenus */
+    }
+  
+    .dropdown.active .dropdown-menu {
+      display: block; /* Mostra o dropdown ao clicar */
+    }
+  }

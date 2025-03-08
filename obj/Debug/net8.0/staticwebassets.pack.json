@@ -1,0 +1,481 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/areas-de-negocio/gestao-de-rede-de-transporte.html",
+      "PackagePath": "staticwebassets/areas-de-negocio/gestao-de-rede-de-transporte.html"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/areas-de-negocio/operacao-de-mercado.html",
+      "PackagePath": "staticwebassets/areas-de-negocio/operacao-de-mercado.html"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/areas-de-negocio/operacao-do-sistema.html",
+      "PackagePath": "staticwebassets/areas-de-negocio/operacao-do-sistema.html"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/css/conselhoadmin.css",
+      "PackagePath": "staticwebassets/css/conselhoadmin.css"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/css/menu.css",
+      "PackagePath": "staticwebassets/css/menu.css"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/css/normalize.css",
+      "PackagePath": "staticwebassets/css/normalize.css"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/css/rntwebsite.webflow.css",
+      "PackagePath": "staticwebassets/css/rntwebsite.webflow.css"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/css/webflow.css",
+      "PackagePath": "staticwebassets/css/webflow.css"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/favicon.ico",
+      "PackagePath": "staticwebassets/favicon.ico"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/Africa-do-sul-1.jpg",
+      "PackagePath": "staticwebassets/images/Africa-do-sul-1.jpg"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/Angola-1.jpg",
+      "PackagePath": "staticwebassets/images/Angola-1.jpg"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/Botswana-1.jpg",
+      "PackagePath": "staticwebassets/images/Botswana-1.jpg"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/Captura-de-ecrã-2025-02-07-às-11.10.23-1-p-1080.jpg",
+      "PackagePath": "staticwebassets/images/Captura-de-ecrã-2025-02-07-às-11.10.23-1-p-1080.jpg"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/Captura-de-ecrã-2025-02-07-às-11.10.23-1-p-500.jpg",
+      "PackagePath": "staticwebassets/images/Captura-de-ecrã-2025-02-07-às-11.10.23-1-p-500.jpg"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/Captura-de-ecrã-2025-02-07-às-11.10.23-1-p-800.jpg",
+      "PackagePath": "staticwebassets/images/Captura-de-ecrã-2025-02-07-às-11.10.23-1-p-800.jpg"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/Captura-de-ecrã-2025-02-07-às-11.10.23-1.jpg",
+      "PackagePath": "staticwebassets/images/Captura-de-ecrã-2025-02-07-às-11.10.23-1.jpg"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/Component-1.svg",
+      "PackagePath": "staticwebassets/images/Component-1.svg"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/Congo-1.jpg",
+      "PackagePath": "staticwebassets/images/Congo-1.jpg"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/Energy-H2-p-1080.jpg",
+      "PackagePath": "staticwebassets/images/Energy-H2-p-1080.jpg"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/Energy-H2-p-1600.jpg",
+      "PackagePath": "staticwebassets/images/Energy-H2-p-1600.jpg"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/Energy-H2-p-500.jpg",
+      "PackagePath": "staticwebassets/images/Energy-H2-p-500.jpg"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/Energy-H2-p-800.jpg",
+      "PackagePath": "staticwebassets/images/Energy-H2-p-800.jpg"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/Energy-H2.jpg",
+      "PackagePath": "staticwebassets/images/Energy-H2.jpg"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/Group-385.svg",
+      "PackagePath": "staticwebassets/images/Group-385.svg"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/Highlight_03.svg",
+      "PackagePath": "staticwebassets/images/Highlight_03.svg"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/LOGO_Inferiro-2.jpg",
+      "PackagePath": "staticwebassets/images/LOGO_Inferiro-2.jpg"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/LOGO_Inferiro-2.svg",
+      "PackagePath": "staticwebassets/images/LOGO_Inferiro-2.svg"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/LOGO_Inferiro-3.jpg",
+      "PackagePath": "staticwebassets/images/LOGO_Inferiro-3.jpg"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/LOGO_Inferiro-4.jpg",
+      "PackagePath": "staticwebassets/images/LOGO_Inferiro-4.jpg"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/LOGO_Inferiro-4.svg",
+      "PackagePath": "staticwebassets/images/LOGO_Inferiro-4.svg"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/LOGO_Inferiro-5.jpg",
+      "PackagePath": "staticwebassets/images/LOGO_Inferiro-5.jpg"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/LOGO_Inferiro.jpg",
+      "PackagePath": "staticwebassets/images/LOGO_Inferiro.jpg"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/LOGO_Inferiro.svg",
+      "PackagePath": "staticwebassets/images/LOGO_Inferiro.svg"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/Lesoto-1.jpg",
+      "PackagePath": "staticwebassets/images/Lesoto-1.jpg"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/Malawi.jpg",
+      "PackagePath": "staticwebassets/images/Malawi.jpg"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/Moçambique.jpg",
+      "PackagePath": "staticwebassets/images/Moçambique.jpg"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/Namibia.jpg",
+      "PackagePath": "staticwebassets/images/Namibia.jpg"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/Suazilândia-1.jpg",
+      "PackagePath": "staticwebassets/images/Suazilândia-1.jpg"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/Tanzânia-1.jpg",
+      "PackagePath": "staticwebassets/images/Tanzânia-1.jpg"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/Vector.jpg",
+      "PackagePath": "staticwebassets/images/Vector.jpg"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/Zâmbia-1.jpg",
+      "PackagePath": "staticwebassets/images/Zâmbia-1.jpg"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/Zimbabué-1.jpg",
+      "PackagePath": "staticwebassets/images/Zimbabué-1.jpg"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/cross-icon.svg",
+      "PackagePath": "staticwebassets/images/cross-icon.svg"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/electrician-male-p-500.png",
+      "PackagePath": "staticwebassets/images/electrician-male-p-500.png"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/electrician-male.png",
+      "PackagePath": "staticwebassets/images/electrician-male.png"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/favicon.ico",
+      "PackagePath": "staticwebassets/images/favicon.ico"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/illustration1-p-500.jpg",
+      "PackagePath": "staticwebassets/images/illustration1-p-500.jpg"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/illustration1.jpg",
+      "PackagePath": "staticwebassets/images/illustration1.jpg"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/illustration2-p-500.jpg",
+      "PackagePath": "staticwebassets/images/illustration2-p-500.jpg"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/illustration2.jpg",
+      "PackagePath": "staticwebassets/images/illustration2.jpg"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/illustration20-p-1080.png",
+      "PackagePath": "staticwebassets/images/illustration20-p-1080.png"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/illustration20-p-500.png",
+      "PackagePath": "staticwebassets/images/illustration20-p-500.png"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/illustration20-p-800.png",
+      "PackagePath": "staticwebassets/images/illustration20-p-800.png"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/illustration20.png",
+      "PackagePath": "staticwebassets/images/illustration20.png"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/illustration21-p-500.jpg",
+      "PackagePath": "staticwebassets/images/illustration21-p-500.jpg"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/illustration21.jpg",
+      "PackagePath": "staticwebassets/images/illustration21.jpg"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/illustration4-p-1080.jpg",
+      "PackagePath": "staticwebassets/images/illustration4-p-1080.jpg"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/illustration4-p-500.jpg",
+      "PackagePath": "staticwebassets/images/illustration4-p-500.jpg"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/illustration4-p-800.jpg",
+      "PackagePath": "staticwebassets/images/illustration4-p-800.jpg"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/illustration4.jpg",
+      "PackagePath": "staticwebassets/images/illustration4.jpg"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/illustration5-p-1080.jpg",
+      "PackagePath": "staticwebassets/images/illustration5-p-1080.jpg"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/illustration5-p-500.jpg",
+      "PackagePath": "staticwebassets/images/illustration5-p-500.jpg"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/illustration5-p-800.jpg",
+      "PackagePath": "staticwebassets/images/illustration5-p-800.jpg"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/illustration5.jpg",
+      "PackagePath": "staticwebassets/images/illustration5.jpg"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/illustration6-p-500.jpg",
+      "PackagePath": "staticwebassets/images/illustration6-p-500.jpg"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/illustration6-p-800.jpg",
+      "PackagePath": "staticwebassets/images/illustration6-p-800.jpg"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/illustration6.jpg",
+      "PackagePath": "staticwebassets/images/illustration6.jpg"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/illustration7-p-500.jpg",
+      "PackagePath": "staticwebassets/images/illustration7-p-500.jpg"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/illustration7-p-800.jpg",
+      "PackagePath": "staticwebassets/images/illustration7-p-800.jpg"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/illustration7.jpg",
+      "PackagePath": "staticwebassets/images/illustration7.jpg"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/illustration8-p-500.jpg",
+      "PackagePath": "staticwebassets/images/illustration8-p-500.jpg"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/illustration8.jpg",
+      "PackagePath": "staticwebassets/images/illustration8.jpg"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/imagen-aerea-de-planta-cuenca---foto-portada-1-p-500.png",
+      "PackagePath": "staticwebassets/images/imagen-aerea-de-planta-cuenca---foto-portada-1-p-500.png"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/imagen-aerea-de-planta-cuenca---foto-portada-1.png",
+      "PackagePath": "staticwebassets/images/imagen-aerea-de-planta-cuenca---foto-portada-1.png"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/linhas-de-transmissao-1-p-1080.jpg",
+      "PackagePath": "staticwebassets/images/linhas-de-transmissao-1-p-1080.jpg"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/linhas-de-transmissao-1-p-500.jpg",
+      "PackagePath": "staticwebassets/images/linhas-de-transmissao-1-p-500.jpg"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/linhas-de-transmissao-1-p-800.jpg",
+      "PackagePath": "staticwebassets/images/linhas-de-transmissao-1-p-800.jpg"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/linhas-de-transmissao-1.jpg",
+      "PackagePath": "staticwebassets/images/linhas-de-transmissao-1.jpg"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/logo.svg",
+      "PackagePath": "staticwebassets/images/logo.svg"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/mapa-p-500.jpg",
+      "PackagePath": "staticwebassets/images/mapa-p-500.jpg"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/mapa.jpg",
+      "PackagePath": "staticwebassets/images/mapa.jpg"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/mountain-range-covered-in-snow-during-daytime-wallpaper-preview-p-500.jpg",
+      "PackagePath": "staticwebassets/images/mountain-range-covered-in-snow-during-daytime-wallpaper-preview-p-500.jpg"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/mountain-range-covered-in-snow-during-daytime-wallpaper-preview.jpg",
+      "PackagePath": "staticwebassets/images/mountain-range-covered-in-snow-during-daytime-wallpaper-preview.jpg"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/news-p-500.jpg",
+      "PackagePath": "staticwebassets/images/news-p-500.jpg"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/news-p-800.jpg",
+      "PackagePath": "staticwebassets/images/news-p-800.jpg"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/news.jpg",
+      "PackagePath": "staticwebassets/images/news.jpg"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/news1-p-500.jpg",
+      "PackagePath": "staticwebassets/images/news1-p-500.jpg"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/news1-p-800.jpg",
+      "PackagePath": "staticwebassets/images/news1-p-800.jpg"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/news1.jpg",
+      "PackagePath": "staticwebassets/images/news1.jpg"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/news2-p-500.jpg",
+      "PackagePath": "staticwebassets/images/news2-p-500.jpg"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/news2-p-800.jpg",
+      "PackagePath": "staticwebassets/images/news2-p-800.jpg"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/news2.jpg",
+      "PackagePath": "staticwebassets/images/news2.jpg"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/news4-p-500.jpg",
+      "PackagePath": "staticwebassets/images/news4-p-500.jpg"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/news4-p-800.jpg",
+      "PackagePath": "staticwebassets/images/news4-p-800.jpg"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/news4.jpg",
+      "PackagePath": "staticwebassets/images/news4.jpg"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/untitled-ui-logomark.svg",
+      "PackagePath": "staticwebassets/images/untitled-ui-logomark.svg"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/images/webclip.png",
+      "PackagePath": "staticwebassets/images/webclip.png"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/imprensa/galeria-de-imagens.html",
+      "PackagePath": "staticwebassets/imprensa/galeria-de-imagens.html"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/imprensa/galeria-de-videos.html",
+      "PackagePath": "staticwebassets/imprensa/galeria-de-videos.html"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/imprensa/noticias.html",
+      "PackagePath": "staticwebassets/imprensa/noticias.html"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/index.html",
+      "PackagePath": "staticwebassets/index.html"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/js/script.js",
+      "PackagePath": "staticwebassets/js/script.js"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/js/webflow.js",
+      "PackagePath": "staticwebassets/js/webflow.js"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/rnt-ep/ambiente-higiene-e-seguranca-no-trabalho.html",
+      "PackagePath": "staticwebassets/rnt-ep/ambiente-higiene-e-seguranca-no-trabalho.html"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/rnt-ep/conselho-de-administracao.html",
+      "PackagePath": "staticwebassets/rnt-ep/conselho-de-administracao.html"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/rnt-ep/estrutura-organica.html",
+      "PackagePath": "staticwebassets/rnt-ep/estrutura-organica.html"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/rnt-ep/integracao-regional.html",
+      "PackagePath": "staticwebassets/rnt-ep/integracao-regional.html"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/rnt-ep/legislacao.html",
+      "PackagePath": "staticwebassets/rnt-ep/legislacao.html"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/rnt-ep/mensagem-do-pca.html",
+      "PackagePath": "staticwebassets/rnt-ep/mensagem-do-pca.html"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/rnt-ep/missao-visao-e-valores.html",
+      "PackagePath": "staticwebassets/rnt-ep/missao-visao-e-valores.html"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/rnt-ep/perfil-da-rnt-ep.html",
+      "PackagePath": "staticwebassets/rnt-ep/perfil-da-rnt-ep.html"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/rnt-ep/programa-de-transformacao-do-sector-eletrico-ptse.html",
+      "PackagePath": "staticwebassets/rnt-ep/programa-de-transformacao-do-sector-eletrico-ptse.html"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/rnt-ep/relacoes-comerciais.html",
+      "PackagePath": "staticwebassets/rnt-ep/relacoes-comerciais.html"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/rnt-ep/relatorio-e-contas.html",
+      "PackagePath": "staticwebassets/rnt-ep/relatorio-e-contas.html"
+    },
+    {
+      "Id": "/Users/michael/Documents/Umbraco-cms/rnt-cms-website/RNTWebsite/wwwroot/tecnologia-e-inovacao/tecnologia-e-inovacao.html",
+      "PackagePath": "staticwebassets/tecnologia-e-inovacao/tecnologia-e-inovacao.html"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.RNTWebsite.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.RNTWebsite.props",
+      "PackagePath": "build\\RNTWebsite.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.RNTWebsite.props",
+      "PackagePath": "buildMultiTargeting\\RNTWebsite.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.RNTWebsite.props",
+      "PackagePath": "buildTransitive\\RNTWebsite.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

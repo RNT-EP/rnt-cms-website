@@ -1,0 +1,23 @@
+﻿@inherits UmbracoViewPage<Umbraco.Cms.Core.Models.Blocks.BlockGridItem<ContentModels.NavigationGroupFooter>>
+
+@{
+    // Verifica se há links filhos e se o título ou link principal estão preenchidos
+    if ((Model.Content.Links != null && Model.Content.Links.Any()) &&
+        (!string.IsNullOrWhiteSpace(Model.Content.Title) || Model.Content.Links != null))
+    {
+    <div class="div_footer_info">
+      <div class="footer_info_title">@Model.Content.Title</div>
+          @foreach (var link in Model.Content.Links)
+                {
+         <a href="@link.Url" target="@link.Target" class="footer_link">@link.Name</a>
+                }
+
+    </div>
+    }
+    else if (Model.Content.Title != null)
+    {
+    <div class="div_footer_info">
+      <div class="footer_info_title">@Model.Content.Title</div>
+    </div>
+    }
+}

@@ -1,0 +1,31 @@
+@inherits UmbracoViewPage
+
+@{
+    var siteSettings = Model.GetSiteSettings();
+    if (siteSettings is null) return;
+}
+
+<section class="section_menu">
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <!-- Logo -->
+                <div class="logo">
+                    <img src="~/images/logo.svg" alt="Logo">
+                </div>
+
+                <!-- Menu Principal -->
+                <ul class="nav-links" id="nav-links">
+                    @await Html.GetBlockGridHtmlAsync(siteSettings, "mainNavigation")
+                </ul>
+
+                <!-- Botão do Menu Mobile -->
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+</section>

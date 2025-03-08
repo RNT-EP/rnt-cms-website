@@ -1,0 +1,17 @@
+@inherits UmbracoViewPage<Umbraco.Cms.Core.Models.Blocks.BlockGridItem<ContentModels.CAcontentGroup>>
+
+@{
+    var image = Model.Content.Value<Umbraco.Cms.Core.Models.MediaWithCrops>("image");
+}
+
+<div class="ca_card">
+    @if (image != null)
+    {
+        <div class="image-frame ca">
+            <img src="@image.LocalCrops.Src" loading="lazy" sizes="(max-width: 640px) 100vw, 640px" alt="" class="image-ratio no-border">
+        </div>
+    }
+
+    <div class="ca-title">@Model.Content.Title</div>
+    <div class="ca-subtitle">@Model.Content.Subtitle</div>
+</div>

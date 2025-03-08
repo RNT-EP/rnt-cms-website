@@ -1,0 +1,14 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.ConselhoDeAdministracao>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+	Layout = "rntmain.cshtml";
+}
+
+<div class="section_message">
+    <div class="w-layout-blockcontainer container_message w-container">
+      <div class="div_ca_vertical">
+		@await Html.GetBlockGridHtmlAsync(Model.Value<BlockGridModel>("person"))
+      </div>
+    </div>
+</div>

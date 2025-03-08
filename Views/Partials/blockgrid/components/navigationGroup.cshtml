@@ -1,0 +1,34 @@
+﻿@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<Umbraco.Cms.Core.Models.Blocks.BlockGridItem<ContentModels.NavigationGroup>>
+
+@{
+    // Verifica se há links filhos e se o título ou link principal estão preenchidos
+    if ((Model.Content.ChildLinks != null && Model.Content.ChildLinks.Any()) &&
+        (!string.IsNullOrWhiteSpace(Model.Content.Title) || Model.Content.Link != null))
+    {
+        <li class="dropdown">
+            @if (Model.Content.Link != null)
+            {
+                <a href="@Model.Content.Link.Url" target="@Model.Content.Link.Target" class="nav-link">
+                    @Model.Content.Link.Name
+                </a>
+            }
+            else if (!string.IsNullOrWhiteSpace(Model.Content.Title))
+            {
+                <a href="#" class="nav-link">
+                    @Model.Content.Title
+                </a>
+            }
+            <ul class="dropdown-menu">
+                @foreach (var childLink in Model.Content.ChildLinks)
+                {
+                    <li><a href="@childLink.Url" target="@childLink.Target">@childLink.Name</a></li>
+                }
+            </ul>
+        </li>
+    }
+    else if (Model.Content.Link != null)
+    {
+        <!-- Item de menu sem dropdown -->
+        <li><a href="@Model.Content.Link.Url" target="@Model.Content.Link.Target" class="nav-link">@Model.Content.Link.Name</a></li>
+    }
+}

@@ -1,0 +1,32 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.PerfilRnt>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+	Layout = "rntmain.cshtml";
+}
+
+
+@{
+    var image = Model.Value<IPublishedContent>("image");
+    var desc = Model.Value<string>("description");
+}
+
+<section data-w-id="fa7f8820-d7ca-47e5-4fef-5beedc075a49" class="section_message">
+    <div class="w-layout-blockcontainer container_message w-container">
+        <div class="div-block-15">
+            @if (image != null)
+            {
+                <div class="div-block-16">
+                    <img src="@image.Url()" loading="eager" alt="" sizes="(max-width: 479px) 87vw, (max-width: 658px) 89vw, (max-width: 991px) 586px, (max-width: 1279px) 46vw, 586px">
+                </div>
+            }
+
+<div class="paragraph-2">
+  @Html.Raw(desc.Replace("\r\n", "<br />").Replace("\n", "<br />"))
+</div>
+
+
+
+        </div>
+    </div>
+</section>

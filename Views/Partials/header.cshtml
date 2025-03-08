@@ -1,0 +1,12 @@
+﻿@inherits UmbracoViewPage
+
+@{
+    var siteSettings = Model.GetSiteSettings();
+    if (siteSettings is null) return;
+}
+
+  <section class="nav_header">
+    <div class="header-links">
+        @await Html.GetBlockGridHtmlAsync(siteSettings, "headerContent")
+    </div>
+  </section>

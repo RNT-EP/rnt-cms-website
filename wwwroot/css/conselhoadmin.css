@@ -1,0 +1,62 @@
+/* CONSELHO DE ADMINSITRAÇÃO*/
+.image-frame.ca {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+}
+
+.image-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Mantém a imagem preenchendo o espaço */
+  object-position: center; /* Centraliza a imagem */
+}
+
+.image-ratio.no-border {
+  border-radius: 0;
+}
+
+.div_ca_vertical {
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+  flex-flow: column;
+  justify-content: center;
+  align-items: stretch;
+  display: flex;
+}
+
+.ca_card {
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.ca-title {
+  color: var(--primary-blue);
+  text-align: center;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.ca-subtitle {
+  color: var(--gold);
+  font-size: 16px;
+  line-height: 140%;
+}
+
+.div-ca-line {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  border: 1px solid #3aa8db80;
+}
+
+.div_ca_horizontal {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}

@@ -1,0 +1,60 @@
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.HomePage>
+  
+  
+<section data-w-id="b892bec5-fa78-7a70-fcec-82b266c9d377" style="opacity:0" class="section_projetos">
+    <div class="w-layout-blockcontainer container-15 w-container">
+      <div class="div-block-38">
+        <div class="div_title">
+          <div class="line_separator"></div>
+          <h4 class="heading-6">@Model.TituloPrincipal</h4>
+        </div>
+        <div class="div-block-35">
+  
+    @if (Model.ListaProjetos != null && Model.ListaProjetos.Any())
+    {
+        <div class="projetos-stack">
+                    @foreach (var item in Model.ListaProjetos)
+                    {
+                        var itemContent = item.Content;
+                        var image = itemContent.Value<Umbraco.Cms.Core.Models.MediaWithCrops>("image");
+                        var title = itemContent.Value<string>("title");
+                        var desc = itemContent.Value<string>("description");
+
+            <div class="noticia_card projetos">
+                <img src="@image.Url()" 
+                loading="lazy"
+                alt="" class="image-8">
+              <div class="div-block-37">
+                <h1 class="heading-8">@title</h1>
+                <p class="paragraph-6">@Html.Raw(desc)</p>
+              </div>
+            </div>
+                    }
+
+
+          </div>
+
+    }
+   
+          <div  class="projetos-main">
+            <div class="image-frame projeto">
+                <img src="@Model.ImageProjetos.Url()l" 
+                loading="lazy" sizes="(max-width: 767px) 197.203125px, (max-width: 991px) 33vw, (max-width: 1919px) 47vw, 712px" 
+                srcset="@Model.ImageProjetos.Url() 500w, 
+                @Model.ImageProjetos.Url() 800w, 
+                @Model.ImageProjetos.Url() 1080w, 
+                @Model.ImageProjetos.Url() 1600w, 
+                @Model.ImageProjetos.Url() 1920w" 
+                alt="" class="image-ratio full-height"></div>
+            <div class="div-block-40">
+              <h1 class="heading-9">@Model.TituloProjetos</h1>
+              <p  class="paragraph-7">@Html.Raw(@Model.DescricaoProjetos)</p>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </section>

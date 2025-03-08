@@ -1,0 +1,11 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
+@{
+	Layout = "Main.cshtml";
+}
+
+@await Html.PartialAsync("slider")
+@await Html.PartialAsync("about")
+@await Html.PartialAsync("noticias")
+@await Html.PartialAsync("projetos")
+@await Html.PartialAsync("parceiros")
